@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ba7a382d-4871-42fa-98af-856966d0923d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1fQTVVsZCwAbr4UFD0fEH0Nk3Hk" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/commonTest" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="controllers" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/kotlin/client" />
+      <recent name="$PROJECT_DIR$/src/main/kotlin/server" />
+      <recent name="$PROJECT_DIR$/src/main/wgu" />
+      <recent name="$PROJECT_DIR$/src/main/kotlin" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Kotlin.ClientKt (1)">
+    <configuration name="Skwa" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="client.ClientKt" />
+      <module name="NetworkedPaint.main" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/main/kotlin/client" />
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="client.Client" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/main/kotlin" />
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Client" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="NetworkedPaint.main" />
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
+      </extension>
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="client.Client" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="NetworkedPaint.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="client.ClientKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="NetworkedPaint.main" />
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
+      </extension>
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="kotlin.client.ClientKt" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServerKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="NetworkedPaint.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="server.ServerKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Skwa" />
+      <item itemvalue="Kotlin.ClientKt" />
+      <item itemvalue="Kotlin.Client" />
+      <item itemvalue="Kotlin.ServerKt" />
+      <item itemvalue="Kotlin.ClientKt (1)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.ClientKt (1)" />
+        <item itemvalue="Kotlin.ServerKt" />
+        <item itemvalue="Kotlin.Client" />
+        <item itemvalue="Kotlin.ClientKt" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ba7a382d-4871-42fa-98af-856966d0923d" name="Default Changelist" comment="" />
+      <created>1596149340070</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596149340070</updated>
+      <workItem from="1596149344870" duration="67000" />
+      <workItem from="1596149509710" duration="205000" />
+      <workItem from="1596149769988" duration="25933000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="628" y="-936" key="#Project_Structure" timestamp="1596156865681">
+      <screen x="-68" y="-1057" width="1920" height="1057" />
+    </state>
+    <state x="628" y="-936" key="#Project_Structure/-68.-1057.1920.1057/0.23.1792.1017@-68.-1057.1920.1057" timestamp="1596156865681" />
+    <state x="730" y="-936" key="#Skwa" timestamp="1596487469365">
+      <screen x="-68" y="-1057" width="1920" height="1057" />
+    </state>
+    <state x="730" y="-936" key="#Skwa/-68.-1057.1920.1057/0.23.1792.1017@-68.-1057.1920.1057" timestamp="1596487469365" />
+    <state x="491" y="-939" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596492458533">
+      <screen x="-68" y="-1057" width="1920" height="1057" />
+    </state>
+    <state x="491" y="-939" key="#com.intellij.execution.impl.EditConfigurationsDialog/-68.-1057.1920.1057/0.23.1792.1017@-68.-1057.1920.1057" timestamp="1596492458533" />
+    <state x="819" y="-878" key="#com.intellij.ide.util.MemberChooser" timestamp="1596486603534">
+      <screen x="-68" y="-1057" width="1920" height="1057" />
+    </state>
+    <state x="819" y="-878" key="#com.intellij.ide.util.MemberChooser/-68.-1057.1920.1057/0.23.1792.1017@-68.-1057.1920.1057" timestamp="1596486603534" />
+    <state x="764" y="-810" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1596491382445">
+      <screen x="-68" y="-1057" width="1920" height="1057" />
+    </state>
+    <state x="764" y="-810" key="#com.intellij.ide.util.TreeClassChooserDialog/-68.-1057.1920.1057/0.23.1792.1017@-68.-1057.1920.1057" timestamp="1596491382445" />
+    <state x="716" y="-858" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1596149689331">
+      <screen x="-68" y="-1057" width="1920" height="1057" />
+    </state>
+    <state x="716" y="-858" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-68.-1057.1920.1057/0.23.1792.1017@-68.-1057.1920.1057" timestamp="1596149689331" />
+    <state x="814" y="-942" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1596478828682">
+      <screen x="-68" y="-1057" width="1920" height="1057" />
+    </state>
+    <state x="814" y="-942" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/-68.-1057.1920.1057/0.23.1792.1017@-68.-1057.1920.1057" timestamp="1596478828682" />
+    <state width="1358" height="178" key="GridCell.Tab.0.bottom" timestamp="1596495422870">
+      <screen x="-68" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1358" height="178" key="GridCell.Tab.0.bottom/-68.-1057.1920.1057/0.23.1792.1017@-68.-1057.1920.1057" timestamp="1596495422870" />
+    <state width="1358" height="178" key="GridCell.Tab.0.center" timestamp="1596495422869">
+      <screen x="-68" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1358" height="178" key="GridCell.Tab.0.center/-68.-1057.1920.1057/0.23.1792.1017@-68.-1057.1920.1057" timestamp="1596495422869" />
+    <state width="1358" height="178" key="GridCell.Tab.0.left" timestamp="1596495422869">
+      <screen x="-68" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1358" height="178" key="GridCell.Tab.0.left/-68.-1057.1920.1057/0.23.1792.1017@-68.-1057.1920.1057" timestamp="1596495422869" />
+    <state width="1358" height="178" key="GridCell.Tab.0.right" timestamp="1596495422870">
+      <screen x="-68" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1358" height="178" key="GridCell.Tab.0.right/-68.-1057.1920.1057/0.23.1792.1017@-68.-1057.1920.1057" timestamp="1596495422870" />
+    <state x="515" y="-1019" key="SettingsEditor" timestamp="1596491486240">
+      <screen x="-68" y="-1057" width="1920" height="1057" />
+    </state>
+    <state x="515" y="-1019" key="SettingsEditor/-68.-1057.1920.1057/0.23.1792.1017@-68.-1057.1920.1057" timestamp="1596491486240" />
+    <state x="935" y="-866" key="chooseDestDirectoryDialog" timestamp="1596149530935">
+      <screen x="-68" y="-1057" width="1920" height="1057" />
+    </state>
+    <state x="935" y="-866" key="chooseDestDirectoryDialog/-68.-1057.1920.1057/0.23.1792.1017@-68.-1057.1920.1057" timestamp="1596149530935" />
+    <state x="721" y="-769" key="com.intellij.ide.util.TipDialog" timestamp="1596149903115">
+      <screen x="-68" y="-1057" width="1920" height="1057" />
+    </state>
+    <state x="721" y="-769" key="com.intellij.ide.util.TipDialog/-68.-1057.1920.1057/0.23.1792.1017@-68.-1057.1920.1057" timestamp="1596149903115" />
+    <state x="456" y="-875" key="new project wizard" timestamp="1596486963619">
+      <screen x="-68" y="-1057" width="1920" height="1057" />
+    </state>
+    <state x="456" y="-875" key="new project wizard/-68.-1057.1920.1057/0.23.1792.1017@-68.-1057.1920.1057" timestamp="1596486963619" />
+  </component>
+</project>
