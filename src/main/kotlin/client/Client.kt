@@ -3,6 +3,7 @@ package client
 import tornadofx.*
 import clientview.Interface
 import javafx.application.Application
+import javafx.stage.Stage
 
 fun main(args: Array<String>) {
     val address = "localhost"
@@ -12,6 +13,11 @@ fun main(args: Array<String>) {
 //    client.run()
 }
 
-class ClientApp(): App() {
+class ClientApp: App() {
     override val primaryView = Interface::class
+    override fun start(stage: Stage) {
+        super.start(stage)
+        stage.width = 1024.0
+        stage.height = 768.0
+    }
 }
