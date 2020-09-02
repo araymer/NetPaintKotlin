@@ -84,13 +84,13 @@ class Canvas: Serializable {
 
         }
 
-        message.layerIndex?.let { layers[it].addShape(shape) }
+        message.layerIndex?.let {layers[it].addShape(shape) }
         notifyClients()
 
     }
 
     private fun notifyClients() {
-        //TODO: Sync all clients to the canvas so they can all display the same content
+    //TODO: Sync all clients to the canvas so they can all display the same content
 
     }
 }
