@@ -4,7 +4,7 @@ import java.io.Serializable
 import java.util.*
 
 class Layer: Serializable {
-    private var drawnShapes: LinkedList<Shape> = LinkedList()
+    var drawnShapes: LinkedList<Shape> = LinkedList()
     private var undoneShapes: LinkedList<Shape> = LinkedList()
 
     //TODO: These methods don't handle end-edge-cases

@@ -3,7 +3,7 @@ package server
 import com.fasterxml.jackson.annotation.ObjectIdGenerators
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import com.fasterxml.jackson.module.kotlin.readValue
-import controllers.Canvas
+import server.controllers.Canvas
 import java.io.OutputStream
 import java.net.ServerSocket
 import java.net.Socket

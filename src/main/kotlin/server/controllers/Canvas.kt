@@ -1,4 +1,4 @@
-package controllers
+package server.controllers
 
 import com.fasterxml.jackson.annotation.ObjectIdGenerators
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
