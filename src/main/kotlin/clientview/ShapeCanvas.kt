@@ -5,23 +5,35 @@ import javafx.geometry.Point2D
 import javafx.scene.input.*
 import javafx.scene.layout.Pane
 import javafx.scene.paint.Color
+import javafx.scene.shape.Ellipse
+import javafx.scene.shape.Rectangle
 import javafx.scene.shape.Shape
 import tornadofx.*
 import java.util.*
+import kotlin.math.abs
 
 var shapeCanvas: ShapeCanvas? = null
 
 class ShapeCanvas : View("Drawing Canvas") {
     var layers = mutableListOf(LinkedList<Shape>())
     var selectedShape: Shape? = null
+    var creatingShape: Shape? = null
+    var creatingCenter: Point2D? = null
     var selectedTool: TOOL = TOOL.SELECT
     var activeLayer = layers[0]
-    var isCreatingShape = false
     var selectedOffset: Point2D? = null
 
 
     init {
         shapeCanvas = this
+    }
+
+    fun Shape.select() {
+        this.stroke = Color.RED
+    }
+
+    fun Shape.deselect() {
+        this.stroke = null
     }
 
     override val root = stackpane {
@@ -31,44 +43,93 @@ class ShapeCanvas : View("Drawing Canvas") {
             backgroundColor += Color.WHITESMOKE
         }
 
+        layers.forEach {
+            for (shape in it) {
+                add(shape)
+            }
+        }
+
+        fun setOffset(evt: MouseEvent) {
+            val mp = this.parent.sceneToLocal(evt.sceneX, evt.sceneY)
+            val vizBounds = this.boundsInParent
+
+            selectedOffset = Point2D(
+                mp.x - vizBounds.minX - (vizBounds.width - this.boundsInLocal.width) / 2,
+                mp.y - vizBounds.minY - (vizBounds.height - this.boundsInLocal.height) / 2
+            )
+        }
 
 
         fun selectOrCreate(evt: MouseEvent) {
-            val x = evt.sceneX
-            val y = evt.sceneY
-
-            if(selectedTool == TOOL.SELECT) {
+            setOffset(evt)
+            if (selectedTool == TOOL.SELECT) {
                 activeLayer.filterNotNull()
                     .firstOrNull {
                         val mousePt = it.sceneToLocal(evt.sceneX, evt.sceneY)
                         it.contains(mousePt)
                     }.apply {
-                        if( this != null ) {
-
+                        if (this != null) {
                             selectedShape = this
-
-                            val mp = this.parent.sceneToLocal(evt.sceneX, evt.sceneY)
-                            val vizBounds = this.boundsInParent
-
-                            selectedOffset = Point2D(
-                                mp.x - vizBounds.minX - (vizBounds.width - this.boundsInLocal.width) / 2,
-                                mp.y - vizBounds.minY - (vizBounds.height - this.boundsInLocal.height) / 2
-                            )
+                            layers.forEach { for (shape in it) shape.deselect() }
+                            this.select()
+                        } else {
+                            layers.forEach { for (shape in it) shape.deselect() }
                         }
                     }
             } else {
-                isCreatingShape = true
-                // TODO: draw ephemeral shape
+
+
+                when (selectedTool) {
+                    TOOL.CIRCLE -> {
+                        creatingShape = ellipse {
+                            centerX = evt.sceneX
+                            centerY = evt.sceneY
+                            radiusX = 1.0
+                            radiusY = 1.0
+                            fill = selectedColor
+                            isFocusTraversable = true
+                        }
+                    }
+                    TOOL.RECTANGLE -> {
+                        creatingShape = rectangle { }
+                    }
+                    TOOL.LINE -> {
+                        creatingShape = line { }
+                    }
+                    TOOL.TRIANGLE -> {
+
+                    }
+                    TOOL.SQUIGGLE -> {
+
+                    }
+                }
+                creatingShape?.let {
+                    add(it)
+                    creatingCenter = (evt.source as Pane).sceneToLocal( evt.sceneX, evt.sceneY )
+                    println("creating center = $creatingCenter")
+                }
             }
         }
 
+        //TODO: There's a bug somewhere in the code below that's causing the shape to snap back to center when moving it, before you can then move it elsewhere.
         fun createOrMoveShape(evt: MouseEvent) {
-            if (isCreatingShape) {
-                when (selectedTool) {
-                    TOOL.CIRCLE -> {
 
+            if (creatingShape != null) {
+                setOffset(evt)
+                when (creatingShape) {
+                    is Ellipse -> {
+                        getChildList()?.remove(creatingShape as Ellipse)
+                        creatingShape = ellipse {
+                            centerX = creatingCenter?.x!!
+                            centerY = creatingCenter?.y!!
+                            radiusX = abs(creatingCenter?.x?.minus(selectedOffset?.x!!) ?: 1.0)
+                            radiusY = abs(creatingCenter?.y?.minus(selectedOffset?.y!!) ?: 1.0)
+                            fill = selectedColor
+                            isFocusTraversable = true
+                        }
+                        add(creatingShape as Ellipse)
                     }
-                    TOOL.RECTANGLE -> {
+                    is Rectangle -> {
 
                     }
                     TOOL.LINE -> {
@@ -81,23 +142,25 @@ class ShapeCanvas : View("Drawing Canvas") {
 
                     }
                 }
-            } else {
-                val mousePt: Point2D = (evt.source as Pane).sceneToLocal(evt.sceneX, evt.sceneY)
-                if (selectedOffset != null) {
 
-                    selectedShape?.relocate(
-                        mousePt.x - selectedOffset!!.x,
-                        mousePt.y - selectedOffset!!.y
-                    )
-                }
+            } else {
+                val mousePt : Point2D = (evt.source as Pane).sceneToLocal( evt.sceneX, evt.sceneY )
+                println("$mousePt -- $selectedOffset")
+                selectedShape?.translateX = mousePt.x - selectedOffset?.x!!
+                selectedShape?.translateY = mousePt.y - selectedOffset?.y!!
             }
         }
 
         fun finishCreateOrMoveShape(evt: MouseEvent) {
-            isCreatingShape = false
-            if(selectedTool != TOOL.SELECT) {
-                // TODO: Commit shape
+            if (selectedTool != TOOL.SELECT) {
+                activeLayer.push(creatingShape)
+
             }
+            creatingShape = null
+            selectedOffset = null
+            selectedShape?.deselect()
+            selectedShape = null
+            creatingCenter = null
         }
 
         addEventFilter(MouseEvent.MOUSE_PRESSED, ::selectOrCreate)

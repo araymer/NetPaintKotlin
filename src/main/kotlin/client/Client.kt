@@ -6,7 +6,7 @@ import javafx.application.Application
 import javafx.stage.Stage
 
 fun main(args: Array<String>) {
-    val address = "localhost"
+    val address = "localhost" //hard coded, but could just as easily be taken as an argument from commandline or UI
     val port = 9999
 
     Application.launch(ClientApp::class.java, *args)

@@ -17,8 +17,8 @@ class Toolbar: View("Toolbar") {
 
     val icons = listOf("/cursor.png", "/circle.png", "/line.png", "/rectangle.png", "/curve.png", "/triangle.png")
     val tools = listOf(TOOL.SELECT, TOOL.CIRCLE, TOOL.LINE, TOOL.RECTANGLE, TOOL.SQUIGGLE, TOOL.TRIANGLE)
-    val selectTool = {tool: TOOL -> shapeCanvas?.selectedTool = tool}
 
+    val selectTool = {tool: TOOL -> shapeCanvas?.selectedTool = tool}
 
     override val root = vbox {
         useMaxHeight = true
